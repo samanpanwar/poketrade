@@ -8,14 +8,14 @@ dotenv.config();
         process.env.PRIVATE_KEY, // Your wallet's private key (only required for write operations)
         "mumbai",
         {
-          clientId: "1f5102bd37642e9024d4462378c4eff2", // Use client id if using on the client side, get it from dashboard settings
-          secretKey: "J6VeiPNwT2HI1syWCbkk4vjMGNxPij57xzDsUt-NxRfbvN3A-SYc0gJFANDMvEZwDfIcbSArT6QtoNmuSaSHOA", // Use secret key if using on the server, get it from dashboard settings
+          clientId: "", // Use client id if using on the client side, get it from dashboard settings
+          secretKey: "", // Use secret key if using on the server, get it from dashboard settings
         },
       );
     
 
-    const packAddress = "0x7cE55aDEFe2c483cEEc571B13042eD6b73faE2cD";
-    const cardAddress = "0x90E3B6d251f6d5b9db666AbdcEe69B90eA789F10";
+    const packAddress = ""; // Use the pack smartcontract address from ThirdWeb
+    const cardAddress = ""; // Use the Pokemon Card smartcontract from ThirdWeb
 
     const pack = sdk.getContract(packAddress, "pack");
 
